@@ -1,0 +1,89 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  color: #212121;
+  font-family: "Open Sans", sans-serif;
+  display: grid;
+  place-items: center;
+}
+body {
+  margin: 0%;
+  padding: 0%;
+}
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+
+.join-chat-container {
+  align-items: center;
+  justify-content: center;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  /* margin: 16px; */
+}
+.join-chat-container h1 {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.join-chat-container input {
+  width: 210px;
+  height: 40px;
+  margin: 6px;
+  border: 2px solid #43a043;
+  border-radius: 5px;
+  padding: 4px;
+}
+.join-chat-container .b1 {
+  width: 210px;
+  height: 40px;
+  margin: 6px;
+  padding: 4px;
+  background: #43a043;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.join-chat-container button:hover {
+  background: #1b1081;
+  color: #fff;
+}
+.chat-window {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+  width: 290px;
+  height: 300px;
+
+  /* align-content: space-around;
+    justify-content: space-evenly;
+    justify-items: stretch; */
+}
+.chat-window .chat-header p{
+   text-align: center;
+   display: block;
+    background: #212121;
+    color: #fff;
+    margin: 7px;
+    padding:5px;
+  
+}
+.chat-window .chat-footer {
+    margin-top: 80%;
+    margin-left: 15px;
+    /* padding: 3px; */
+}
+.chat-window .chat-footer input{
+ 
+    /* flex: 85%; */
+    border: 0;
+/*    
+    font-size: 1em; */
+    border-right: 1px dotted #607d8b;
+  
+    outline: none;
+    font-family: "Open Sans", sans-serif;
+}

@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import SendIcon from '@mui/icons-material/Send';
+import { Button } from '@mui/material';
 
 function Chat({user,socket,room}) {
      
@@ -30,7 +32,6 @@ function Chat({user,socket,room}) {
         <div className='chat-header'>
             <p>Live Chat</p>
         </div>
-        <div className='chat-body'> </div>
         <div className=' chat-footer'> 
         <input
         placeholder='hey...'
@@ -38,7 +39,7 @@ function Chat({user,socket,room}) {
         onChange={(event) => {
             setCurrentChat(event.target.value)
         }}/>
-        <button onClick={sendMessage} className='b2'>Send</button>
+        <Button variant='contained' onClick={sendMessage} className='b2'><SendIcon/></Button>
          </div>
     </div>
   )
